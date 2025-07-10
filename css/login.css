@@ -1,0 +1,42 @@
+body {
+margin: 0;
+padding:0;
+font-family: Arial, sans-serif; /* fonte */
+background: linear-gradient(rgb(255, 231, 231)); /* cor de fundo */
+display:flex; /* flex container */
+justify-content: center; /* conteudo centralizado horizontal */
+align-items: center; /* conteudo centralizado vertical */
+background-image: url('https://c4.wallpaperflare.com/wallpaper/681/564/862/lago-azul-wallpaper-preview.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.LoginContainer{
+    background-color: rgba(52, 163, 236, 0.863);
+    padding:30px;
+    width:600px;
+    text-align: center;
+     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 12px;
+       border-color: rgb(0, 0, 0);
+ }
+button{
+    margin:5px;
+    padding: 10px;
+    font-size:24px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color:rgb(0, 0, 0);
+    background-color: rgb(27, 137, 170);
+    border-color: rgb(0, 0, 0);
+    border-radius: 12px;
+    animation: piscar 1s infinite;
+     position: relative;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+}
+button:hover {
+  background-color: rgb(183, 235, 232);
+}

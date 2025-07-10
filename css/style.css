@@ -17,8 +17,6 @@ button {
  cursor:pointer;
  border-color:rgb(6, 95, 95);
    border-radius: 8px;
-animation: piscar 1s infinite;
-
  
 }
 
