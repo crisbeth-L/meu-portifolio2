@@ -1,56 +1,108 @@
 body {
   margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: 
-    linear-gradient(rgb(255, 231, 231), rgb(255, 231, 231)),
-    url("https://c4.wallpaperflare.com/wallpaper/681/564/862/lago-azul-wallpaper-preview.jpg");
+  padding:0;
+  font-family: "Sofia", sans-serif; /* fonte */
+  text-shadow: 3px 3px 3px #ff5050;
+  background: linear-gradient(rgb(255, 231, 231)); /* cor de fundo */
+  display:flex; /* flex container */
+  justify-content: center; /* conteudo centralizado horizontal */
+  align-items: center; /* conteudo centralizado vertical */
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/681/564/862/lago-azul-wallpaper-preview.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.LoginContainer{
-    background-color: rgba(52, 163, 236, 0.863);
-    padding:40px;
-    width:600px;
-    text-align: center;
-     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+  
+  }
+  
+  
+  .loginContainer{
+      background-color: rgb(130, 176, 235);
+      font-size:24px;
+      padding:30px;
+      text-align: center;
+      border-radius: 30px;
+      box-shadow: 10px 10px 5px rgb(163, 180, 190);
+      width: 600px;
+      height:600px;
+      margin-left: center;
+      margin-right: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+  
+  
+  form {
+    display: flex; /* Define o formulário como flex container. */
+    flex-direction: column; /* Organiza os elementos filhos em coluna (um abaixo do outro). */
+  }
+  
+  
+  button{
+      margin:40px;
+      padding: 10px;
+      font-size:24px;
+      box-shadow: 0 8px 16px 0 rgba(255, 215, 215, 0.2), 0 6px 20px 0 rgba(255, 216, 216, 0.19);
+      color:rgb(65, 203, 228);
+      font-family: "Sofia", sans-serif;
+      background-color: rgb(70, 206, 224);
+      border-color: rgb(7, 91, 148);
       border-radius: 12px;
-       border-color: rgb(0, 0, 0);
-    font-size:24px;
-    padding:30px;
+      position: relative;  
+      text-align: center;
+      transition: background-color 0.3s ease;
+      color: rgb(255, 255, 255);
+      text-shadow: 1px 1px 2px black, 0 0 25px rgb(160, 190, 255), 0 0 5px rgb(62, 65, 255);
+      cursor: pointer;
+      display: inline-block;
+      transition: box-shadow 0.3s ease;
+     
+  }
+  button:hover {
+    box-shadow: 0 0 15px rgb(113, 97, 255); /* Efeito de brilho */
+    animation: pulse 2s infinite; /* Aplica a animação de pulsação */
+  }
+  
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 15px rgb(255, 86, 86); /* Brilho inicial */
+    }
+    50% {
+      transform: scale(1.1); /* Aumenta o tamanho */
+      box-shadow: 0 0 25px rgb(255, 86, 86); /* Maior brilho */
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 15px rgb(255, 86, 86); /* Volta ao tamanho e brilho inicial */
+    }
+  }
+  h2{
+    color: white;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 25px rgb(255, 0, 55), 0 0 5px rgb(255, 0, 76);
     text-align: center;
-    border-radius: 30px;
-    box-shadow: 10px 10px 5px rgb(218, 240, 255);
-    width: 600px; 
-    margin-left: center;
-    margin-right: center;
-    position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
- }
-button{
-    margin:5px;
-    padding: 10px;
-    font-size:24px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    color:rgb(0, 0, 0);
-    background-color: rgb(27, 137, 170);
-    border-color: rgb(0, 0, 0);
-    border-radius: 12px;
-    animation: piscar 1s infinite;
-     position: relative;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease; /* Adiciona uma transição suave */
-}
-button:hover {
-  background-color: rgb(183, 235, 232);
-}
-
+    font-size:70px;
+  }
+  label{
+    color: rgb(75, 160, 230);
+    text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 25px rgb(0, 0, 0), 0 0 5px rgb(0, 0, 0);
+    text-align: left; /* Alinha o texto dos labels à esquerda. */
+    margin: 5px 0 2px 0; /* Define margem de 5px em cima, 0 nas laterais e 2px embaixo. */
+    font-size: 30px;
+    
+   
+  }
+  a{
+    color: white;
+    text-shadow: 1px 1px 2px rgb(56, 102, 255), 0 0 25px rgb(255, 0, 55), 0 0 5px rgb(255, 0, 76);
+  }
+  input{
+    width: 595px;
+    height:30px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px rgb(107, 169, 250);
+    border: 3px solid #5ab6f3;
+  
+  }
